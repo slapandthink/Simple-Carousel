@@ -97,23 +97,31 @@ textarea {
 /**
  * General style
  */
-body { font-family: ; font-size: 1em; }
+body { font-family: ; font-size: 14px; background: url('../img/background.jpg') left top; color: #323131; }
+
+/**
+ * Header
+ */
+body>header h1 { border-bottom: 1px solid #9B9B9B; color: #323232; }
+body>header h2 { color: #484848; }
 
 /**
  * SC Carrousel style
  */
 #SCwrap { position: relative; display: block; width: 100%; height: 650px; }
 #SCcontainer { position: absolute; height: 600px; left: 0; }
-#SCcontainer article.SCitem { width: 350px; position: relative; float: left; margin: 5px; border: 1px solid #A2A2A2; background: #EEEEEE; }
+#SCcontainer article.SCitem { width: 340px; position: relative; float: left; margin: 5px; border: 1px solid #E2E0DE; background: #FFFFFF; }
+#SCcontainer article.SCitem header h1 { font-size: 24px; }
 #SCcontainer article.SCitem header,
 #SCcontainer article.SCitem .description,
-#SCcontainer article.SCitem footer { padding: 0 5px; }
+#SCcontainer article.SCitem footer { padding: 0 5px; font-size: 14px; }
+#SCcontainer article.SCitem footer>a { text-transform: uppercase; float: right; margin: 10px; padding: 10px; background: #F3F3F3; color: #323232; text-decoration: none; font-size: 10px; }
 
-#SCinteract { position: absolute; top: 550px; width: 100%; display: block; }
+#SCinteract { position: absolute; top: 480px; width: 100%; display: block; }
 #SCprevious-link { outline: none; position: absolute; left: -35px; text-indent: -9999em; height: 24px; width: 24px; display: block; background: url('../img/arrows.png') right top no-repeat; padding: 0; margin: 0; }
 #SCnext-link { outline: none; position: absolute; right: -35px;  text-indent: -9999em; height: 24px; width: 24px; display: block; background: url('../img/arrows.png') left top no-repeat; padding: 0; margin: 0; }
-#SCscrollbar { position: relative; margin: 5px 0; display: block; width: 100%; bottom: 0; background: #A5A5A5; height: 20px; }
-#SCtracker { position: absolute; margin: 0; padding: 0; height: 100%; background: #333333; cursor: move; -webkit-border-radius: 20px; border-radius: 20px; }
+#SCscrollbar { position: relative; margin: 5px 0; display: block; width: 100%; bottom: 0; background: url('../img/scrollbar.png') left center repeat-x; height: 20px; -webkit-border-radius: 10px; border-radius: 10px; }
+#SCtracker { position: absolute; top: -2px; margin: 0; padding: 0; height: 24px; background: url('../img/tracker.png') left center repeat-x; cursor: move; -webkit-border-radius: 20px; border-radius: 20px; }
 
 
 /**/

@@ -81,20 +81,21 @@
                 /* Interacting */
                 if(Slide.container){ //if slide container is setted then, do the work
 
-                    /* push the content sliding to the left side of the window */
+                    /**
+                     * Push the content sliding to the left side of the window
+                     */
                         
-                        //calculate the total width of an item
-                        // var itemsMargin         = (parseFloat(Slide.items.css('margin-left').replace('px', '')))*2, // must be a float (margin-left*2);
-                        // contentSlidingWidth = (Slide.items.width() + itemsMargin) * Slide.items.length; //set content width on all browser window
-                        
-                        // +margin +border +padding +width
+                        /**
+                         * Calculate the total width of an item
+                         * +margin +border +padding +width
+                         */
                         var itemWidth = 
                                         ( parseFloat(Slide.items.css('margin-left').replace('px', ''))
                                           + parseFloat(Slide.items.css('border-left-width').replace('px', ''))
                                           + parseFloat(Slide.items.css('padding-left').replace('px', ''))
                                         )*2 + Slide.items.width(),
                             contentSlidingWidth = itemWidth * Slide.items.length; //set content width on all browser window
-                        Slide.container.width(contentSlidingWidth).css('left', '-'+ ((contentSlidingWidth - Slide.wrap.width()) /2) +'px' ); // offset
+                        Slide.container.width(contentSlidingWidth).css('left', '-'+ ((contentSlidingWidth - Slide.wrap.width()) /2) +'px'); // offset
                     /* --- */
 
                     /* Ratio between slide content and tracker */
